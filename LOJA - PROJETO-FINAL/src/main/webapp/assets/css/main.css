@@ -1,0 +1,43 @@
+body {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.content {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-box {
+	width: auto;
+    padding: 60px;
+    border-radius: 30px;
+    background-color: #ffffffe6;
+}
+
+label {
+	font-size: 1.4em !important;
+}
+
+td{
+	text-align:center;
+	vertical-align: middle;
+}
+
+th{
+	text-align:center;
+}
+
+.card-info{
+	height: 60vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.btn-full{
+	width: 100%;
+}

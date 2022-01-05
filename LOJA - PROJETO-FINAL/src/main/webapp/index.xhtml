@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+ 	  xmlns:ui="http://java.sun.com/jsf/facelets"
+ 	  xmlns:h="http://java.sun.com/jsf/html"
+ 	  xmlns:f="http://java.sun.com/jsf/core"
+ 	  xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>
+        Menu
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+</h:head>
+
+<h:body style="background-image: url(assets/img/menu.jpg);">
+    <div class="container content">
+        <div class="row">
+            <div class="col-12 form-box">
+                <h1 style="font-weight:bold;" class="display-2 mb-4 text-center text-dark">
+                	MENU
+                </h1>
+                <div class="card">
+				    <h:form>
+				        <p:growl>
+				            <p:autoUpdate/>
+				        </p:growl>
+				        <p:panelMenu style="width:300px">
+				            <p:submenu label="CADASTRAR">
+				                <p:menuitem value="PRODUTOS" url="cadastrar-produto.xhtml" icon="pi pi-plus"/>
+				                <p:menuitem value="CLIENTES" url="cadastrar-cliente.xhtml" icon="pi pi-plus"/>
+				                <p:menuitem value="TELEFONES" url="cadastrar-telefone.xhtml" icon="pi pi-plus"/>
+				            </p:submenu>
+				            <p:submenu label="LISTAR">
+				                <p:menuitem value="PRODUTOS" url="produtos.xhtml" icon="pi pi-list"/>
+				                <p:menuitem value="CLIENTES" url="clientes.xhtml" icon="pi pi-list"/>
+				                <p:menuitem value="TELEFONES" url="telefones.xhtml" icon="pi pi-list"/>
+				            </p:submenu>
+				        </p:panelMenu>
+				    </h:form>
+				</div>
+            </div>
+        </div>
+    </div>
+</h:body>
+
+</html>
